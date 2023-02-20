@@ -1,5 +1,15 @@
-<form action="/answer" data-turbo="false">
-  <input type="text" name="question">
-  <input type="submit" value="Ask!">
+
+
+
+<form  action="/answer" class="row g-3">
+<div class="col-auto">
+    <label for="questions" >Ask coach anything:</label>
+  </div>
+  <div class="col-auto">
+    <input type="text" class="form-control" name="question"  placeholder="Question">
+  </div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3">Ask!</button>
+  </div>
 </form>
 <%= link_to 'Ask another question', '/ask' %>
